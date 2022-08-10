@@ -1,12 +1,18 @@
+@font-face {
+    font-family: 'Livvic', sans-serif;
+    src: url(../fonts/Livvic-Regular.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     font-size: 18px;
+    font-family: 'Livvic', sans-serif;
+
 }
 .container{
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 70px;
 }
 .navbar{
     display: flex;
@@ -26,14 +32,66 @@
 }
 .nav__item{
     list-style: none;
-    margin-right: 20px;
+    margin-left: 40px;
 }
 .nav__link{
     text-decoration: none;
+    color: #fff;
+}
+.nav__link:hover{
+    color: #F67E7E;
 }
 .nav__btn{
     text-decoration: none;
-    padding: 10px 20px;
-    border: 2px solid red;
+    padding: 10px 35px;
+    border: 1px solid #fff;
     border-radius: 30px;
+    color: #fff;
+    transition: all .4s;
+}
+.nav__btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.bg-2{
+    background-color: #014E56;
+    height: 20vh;
+}
+
+/* Hero style */
+.hero::before{
+    content: '';
+    background: url(../images/disk-bottom.png) no-repeat;
+    background-position: 100px 100px;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+.bg{
+    background-color: #014E56;
+    height: 80vh;
+}
+.hero{
+    padding: 5rem;
+}
+.hero__text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+}
+.hero__text > h1{
+    font-size: 4rem;
+    color: #fff;
+}
+.hero__text > p{
+    line-height: 28px;
+    max-width: 400px;
+    color: #fff;
+}
+.span{
+    color: #F67E7E;
+    font-size: 4rem;
 }
